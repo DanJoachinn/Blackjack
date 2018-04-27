@@ -8,7 +8,7 @@ public class Frame extends JFrame {
 		super("21 Blackjack");
 		Jugador player1=new Jugador();
 		Mesa panelMesa=new Mesa(player1);
-		Controles cntr=new Controles(panelMesa, this);
+		Controles cntr=new Controles(panelMesa, this, player1);
 		this.add(panelMesa);
 		this.add(cntr, BorderLayout.SOUTH);
 		this.setResizable(false);

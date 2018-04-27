@@ -10,8 +10,8 @@
 		this.palo = palo;
 	}
 	
-	public String getCard(){
-		return Naipe.strValor[this.valor] + "_of_ " + Naipe.strPalo[this.palo];
+	public String getCardName(){
+		return Naipe.strValor[this.valor] + "_of_" + Naipe.strPalo[this.palo];
 	}
 
 }
