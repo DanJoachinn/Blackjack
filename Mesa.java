@@ -18,6 +18,7 @@ public class Mesa extends JPanel{
 				yCoord,
 				pot,
 				contadorDeCartas;
+
 	
 	public Mesa(Jugador player) {
 		super();
@@ -102,6 +103,5 @@ public class Mesa extends JPanel{
 	}
 	public int getPot() {
 		return this.pot;
-	}
-	
+	}	
 }

@@ -1,6 +1,8 @@
 import java.awt.Image;
 import java.util.Random;
 
+import javax.swing.ImageIcon;
+
 public class Jugador {
 
 	private int montoInicio,
@@ -42,6 +44,10 @@ public class Jugador {
 		if(valueStr[0].equals("jack")||valueStr[0].equals("queen")||valueStr[0].equals("king")) {
 			this.value = 10;
 		}
+		else if(valueStr[0].equals("1")){
+			this.value= 11;
+			
+		}
 		else {
 			this.value=Integer.parseInt(valueStr[0]);
 		}
@@ -52,5 +58,4 @@ public class Jugador {
 	public Baraja getBaraja() {
 		return this.baraja;
 	}
-	
 }

@@ -101,10 +101,6 @@ public class Controles extends JPanel{
 					valuePlayer+=player1.getValue();
 					mano.setCard(new ImageIcon("Cards\\back.png").getImage(),3);
 					
-					System.out.println(valueDealer);
-					
-					System.out.println(valuePlayer);
-					
 				}
 				else {
 					JOptionPane.showMessageDialog(Controles.this.mano, "Debe apostar para comenzar");
@@ -115,12 +111,10 @@ public class Controles extends JPanel{
 	
 	public void setValuesPlayer(int i) {
 		this.valuePlayer+=i;
-		System.out.println(this.valuePlayer);
 	}
 	
 	public void setValuesDealer(int i) {
 		this.valueDealer+=i;
-		System.out.println(this.valueDealer);
 	}
 	
 	public boolean validarValor() {
@@ -128,7 +122,7 @@ public class Controles extends JPanel{
 			return true;
 		}
 		else {
-			JOptionPane.showMessageDialog(this.mano, "Has perdido :(");
+			JOptionPane.showMessageDialog(this.mano, "Has perdido :( tienes "+this.valuePlayer);
 			return false;
 		}
 	}

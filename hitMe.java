@@ -81,6 +81,7 @@ public class hitMe extends JPanel {
 					hitMe.this.resetCntr();
 				}
 				else if(hitMe.this.cntroles.getValuePlayer()<hitMe.this.cntroles.getValueDealer()) {
+						
 					JOptionPane.showMessageDialog(hitMe.this.mano, "Perdiste :(\nDealer tiene "+hitMe.this.cntroles.getValueDealer());
 					hitMe.this.resetCntr();
 				}
