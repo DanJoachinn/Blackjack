@@ -1,3 +1,12 @@
+/*
+ * Autores:
+ * Daniel Andres Ortiz Joachin A01634016.
+ * Luis Antonio García Miramontes A01540063.
+ * Clase: Controles.
+ * Fecha: 2 de Mayo de 2018.
+ * Comentarios: Ninguno.
+ */
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -82,7 +91,14 @@ public class Controles extends JPanel{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(pot!=0) {
+				if(pot>500) {
+					JOptionPane.showMessageDialog(Controles.this.mano, "No tiene los fondos suficientes.");
+					mano.resetPot();
+					mano.setPot(0);
+					setPot(0);
+				}
+				
+				else if(pot!=0) {
 					
 					mano.setMonto();
 					
@@ -102,6 +118,7 @@ public class Controles extends JPanel{
 					mano.setCard(new ImageIcon("Cards\\back.png").getImage(),3);
 					
 				}
+				
 				else {
 					JOptionPane.showMessageDialog(Controles.this.mano, "Debe apostar para comenzar");
 				}
@@ -109,6 +126,19 @@ public class Controles extends JPanel{
 		});
 	}
 	
+	
+	
+	public int getPot() {
+		return pot;
+	}
+
+
+
+	public void setPot(int pot) {
+		this.pot = pot;
+	}
+
+
 	public void setValuesPlayer(int i) {
 		this.valuePlayer+=i;
 	}
