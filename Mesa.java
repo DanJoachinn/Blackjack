@@ -1,3 +1,12 @@
+/*
+ * Autores:
+ * Daniel Andres Ortiz Joachin A01634016.
+ * Luis Antonio García Miramontes A01540063.
+ * Clase: Mesa.
+ * Fecha: 2 de Mayo de 2018.
+ * Comentarios: Ninguno.
+ */
+
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -41,7 +50,7 @@ public class Mesa extends JPanel{
 		super.paintComponent(g);
 		g.drawImage(this.fondo,0,0,this.getWidth(),this.getHeight(),this);
 		g.setFont(new Font("default", Font.BOLD, 20));
-		g.drawString("Pot: $"+this.pot,370,470);
+		g.drawString("Pot: $"+this.pot,340,470);
 		g.drawString("Fondos: $"+this.player1.getMonto(), 150, 450);
 	
 		g.drawImage(this.cartas[0], this.xCoord, this.yCoord, 80, 100, this);
@@ -54,13 +63,13 @@ public class Mesa extends JPanel{
 		g.drawImage(this.cartas[7], this.xCoord+100, this.yCoord-250, 80, 100, this);//resto cartas dealer
 		g.drawImage(this.cartas[8], this.xCoord+150, this.yCoord-250, 80, 100, this);
 		g.drawImage(this.cartas[9], this.xCoord+200, this.yCoord-250, 80, 100, this);
+	
 		
 	}
 	
 	public void setPot(int nuevoPot) {
 		this.pot=nuevoPot;
 		this.repaint();
-		
 	}
 	
 	public void setMonto() {
@@ -89,7 +98,7 @@ public class Mesa extends JPanel{
 		this.cartas[9]=null;
 		this.repaint();
 	}
-	
+
 	public Jugador getJugador() {
 		return this.player1;
 	}

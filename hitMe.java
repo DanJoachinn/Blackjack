@@ -1,3 +1,12 @@
+/*
+ * Autores:
+ * Daniel Andres Ortiz Joachin A01634016.
+ * Luis Antonio García Miramontes A01540063.
+ * Clase: hitMe.
+ * Fecha: 2 de Mayo de 2018.
+ * Comentarios: Ninguno.
+ */
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -47,6 +56,7 @@ public class hitMe extends JPanel {
 				 
 				hitMe.this.mano.setCard(new ImageIcon("Cards\\"+hitMe.this.player1.getCard()+".png").getImage(),posicionCarta);
 				hitMe.this.cntroles.setValuesPlayer(player1.getValue());
+				
 				hitMe.this.mano.repaint();
 				posicionCarta+=1;
 				

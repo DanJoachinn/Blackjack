@@ -1,7 +1,17 @@
+/*
+ * Autores:
+ * Daniel Andres Ortiz Joachin A01634016.
+ * Luis Antonio García Miramontes A01540063.
+ * Clase: Jugador.
+ * Fecha: 2 de Mayo de 2018.
+ * Comentarios: Ninguno.
+ */
+
 import java.awt.Image;
 import java.util.Random;
 
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 public class Jugador {
 
@@ -11,12 +21,15 @@ public class Jugador {
 	
 	private Baraja baraja;
 	
+	
 	private String nombreCarta;
+	
 	
 	public Jugador() {
 		this.montoInicio=500;
 		this.baraja=new Baraja();
 		this.seleccionador=52;
+
 	}
 	
 	public int getMonto() {
@@ -44,10 +57,11 @@ public class Jugador {
 		if(valueStr[0].equals("jack")||valueStr[0].equals("queen")||valueStr[0].equals("king")) {
 			this.value = 10;
 		}
+		
 		else if(valueStr[0].equals("1")){
-			this.value= 11;
-			
+			this.value=11;		
 		}
+		
 		else {
 			this.value=Integer.parseInt(valueStr[0]);
 		}

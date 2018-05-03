@@ -1,3 +1,12 @@
+/*
+ * Autores:
+ * Daniel Andres Ortiz Joachin A01634016.
+ * Luis Antonio García Miramontes A01540063.
+ * Clase: Frame.
+ * Fecha: 2 de Mayo de 2018.
+ * Comentarios: Ninguno.
+ */
+
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
